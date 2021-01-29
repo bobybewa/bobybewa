@@ -10,13 +10,18 @@
   <div class="bck">
       <div class="form-box">
           <div class="button-box">
-            <div id="btn"></div>
-              <button type="button" class= "toogle-btn" onclick="login()">Sign In</button>
-              <button type="button" class= "toogle-btn" onclick="register()">Sign Up</button>
+            <div id="btn1" onclick="mode('login')">
+              <button type="button" class= "toogle-btn1" onclick="mode('login')">Sign In</button>
+            </div>
+            <div id="btn2" onclick="mode('register')">
+              <button type="button" class= "toogle-btn2" onclick="mode('register')">Sign Up</button>
+            </div>
+              
+             
           </div>
 
           <!-- login -->
-          <div class="loginform">
+          <div id="loginForm">
             <input type="text" placeholder="Username" class="main-input"
             required="required" id="userID">
             <input type="password" placeholder="Enter password" class="main-input"
@@ -28,7 +33,7 @@
 
 
           <!-- Register -->
-          <form id="register" action="index.html" class="input-form" >
+          <div id="regisForm">
             <input type="text" placeholder="Username" class="main-input"
             required="required" name="firstName" id="firstName">
 
@@ -39,8 +44,8 @@
             required="required" name="pw" id="kataSandi">
 
             <input type="checkbox" class='check-box'><span>I agree to the terms & conditons</span>
-            <button type="submit" class="sumbit-btn" >Sign Up</button>
-          </form>
+            <button type="button" onclick="" class="sumbit-btn" >Sign Up</button>
+          </div>
           <!-- end register -->
       </div>
   </div>
