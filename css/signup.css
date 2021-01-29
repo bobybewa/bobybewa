@@ -1,0 +1,11 @@
+#register{
+    left: 400px;
+}
+
+input[type = "checkbox"]{
+    margin-top: 25px;
+}
+
+span{
+    padding-left: 10px;
+}

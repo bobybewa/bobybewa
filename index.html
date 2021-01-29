@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title></title>
+</head>
+<body>
+  <div class="bck">
+      <div class="form-box">
+          <div class="button-box">
+            <div id="btn"></div>
+              <button type="button" class= "toogle-btn" onclick="login()">Sign In</button>
+              <button type="button" class= "toogle-btn" onclick="register()">Sign Up</button>
+          </div>
+
+          <!-- login -->
+          <div class="loginform">
+            <input type="text" placeholder="Username" class="main-input"
+            required="required" id="userID">
+            <input type="password" placeholder="Enter password" class="main-input"
+            required="required" id="userPass">
+            <button type="button" onclick="guest()" class="sumbit-btn" >Sign In</button>
+          </div>
+
+          <!-- <button style="width: 30px;" onclick="add()"></button> -->
+
+
+          <!-- Register -->
+          <form id="register" action="index.html" class="input-form" >
+            <input type="text" placeholder="Username" class="main-input"
+            required="required" name="firstName" id="firstName">
+
+            <input type="email" placeholder="your email" class="main-input"
+            required="required" name="email" id="email">
+
+            <input type="password" placeholder="Enter password" class="main-input"
+            required="required" name="pw" id="kataSandi">
+
+            <input type="checkbox" class='check-box'><span>I agree to the terms & conditons</span>
+            <button type="submit" class="sumbit-btn" >Sign Up</button>
+          </form>
+          <!-- end register -->
+      </div>
+  </div>
+<script src="./js/script.js"></script>
+<!-- <script src="./js/login.js"></script> -->
+</body>
+</html>
