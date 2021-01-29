@@ -3,10 +3,36 @@ const daftar = document.getElementById("register");
 const tombol = document.getElementById("btn")
 
 // swipe
-function register(){
-    alert("Sorry, our website is in error! you can login with guest account.");
-    alert(`username : guest@guest, password : guest`)
+// function register(){
+//     alert("Sorry, our website is in error! you can login with guest account.");
+//     alert(`username : guest@guest, password : guest`)
+// }
+
+const loginForm = document.getElementById("loginForm")
+const regisForm = document.getElementById("regisForm")
+
+const button1 = document.getElementById("btn1");
+const button2 = document.getElementById("btn2");
+// regisForm.style.display = "none"
+function mode(str){
+
+    if(str === 'login'){
+        loginForm.style.display = "block"
+        regisForm.style.display = "none"
+        button1.style['background-image'] = "linear-gradient(to right, #4facfe 0%, #00f2fe 100%)"
+        button2.style['background-image'] = "none"
+    }else if (str === 'register') {
+        regisForm.style.display = "block"
+        loginForm.style.display = "none"
+
+        button1.style['background-image'] = "none"
+        button2.style['background-image'] = "linear-gradient(to right, #4facfe 0%, #00f2fe 100%)"
+        button2.style.width = '110px'
+        button2.style.height = '100%'
+        // button2.style.position = 'absolute'
+    }
 }
+
 
 // function register(){
 //     masuk.style.left = "40px"
@@ -14,11 +40,11 @@ function register(){
 //     tombol.style.left = "110px"
 // }
 
-function login(){
-    masuk.style.left = "50px"
-    daftar.style.left = "450px"
-    tombol.style.left = "0"
-}
+// function login(){
+//     masuk.style.left = "50px"
+//     daftar.style.left = "450px"
+//     tombol.style.left = "0"
+// }
 
 // data
 

@@ -10,10 +10,6 @@ function guest () {
     // const getUserLocal = localStorage.getItem("username")
     // const getPassLocal = localStorage.getItem("password") 
 }
-
-
-
-
 const idName = document.getElementById("userID")
 let idValue = idName.value;
 
